@@ -1,7 +1,24 @@
+
+<map4d-map 
+[options]="options1" 
+[id]="id"
+version="2.4"
+accessKey="__your_key___"
+style="width: 400px; height: 400px"
+></map4d-map>
+
+<map4d-map 
+[options]="options2" 
+id="map2"
+version="2.4"
+accessKey="__your_key___"
+(onMapReady)="onMapReady($event)"
+style="width: 500px; height: 500px"
+></map4d-map>
+
 <h2>Products</h2>
 
-
-<!-- 
+<!--   
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
