@@ -22,8 +22,7 @@ onMapReady(data: {map: any, id: string}){
     console.log(`map with id = (${data.id}) is ready`)
     console.log(data)
     //https://docs.map4d.vn/map4d-map/web/v2.4/#/guides/marker
-    // Tạo đối tượng marker từ MarkerOption
-    let awindow: any = window
+    // Tạo đối tượng marker từ MarkerOption    
     let marker = new map4d.Marker({
       position: {lat: 16.068046, lng: 108.192189},
       label: 'Demo marker'
@@ -40,4 +39,5 @@ Now you can interact to map via `data.map` with `id` is `data.id` from `onMapRea
 [More docs here](https://docs.map4d.vn/map4d-map/web/)
 
 ## Notice
-The `id` of map4d-map component must be unique
+1. The `id` of map4d-map component must be unique
+2. When use with `Typescript`, to bypass type checking just add `declare var map4d: any` to your source
